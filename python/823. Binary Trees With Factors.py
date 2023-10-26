@@ -1,5 +1,5 @@
 class Solution:
-    def numFactoredBinaryTrees(self, arr: List[int]) -> int:
+    def numFactoredBinaryTrees(self, arr: list[int]) -> int:
         arr.sort()
         dp = {}
         
