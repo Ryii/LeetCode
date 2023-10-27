@@ -7,9 +7,10 @@ class TreeNode:
 
 from typing import Optional
 from collections import deque
+from typing import List
 
 class Solution:
-    def largestValues(self, root: Optional[TreeNode]) -> list[int]:
+    def largestValues(self, root: Optional[TreeNode]) -> List[int]:
         if not root:
             return []
         

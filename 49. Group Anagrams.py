@@ -1,7 +1,8 @@
 from collections import defaultdict
+from typing import List
 
 class Solution:
-    def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
 
         hashMap = defaultdict(list)
 

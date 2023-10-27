@@ -1,5 +1,7 @@
+from typing import List
+
 class Solution:
-    def longestConsecutive(self, nums: list[int]) -> int:
+    def longestConsecutive(self, nums: List[int]) -> int:
         hashSet = set(nums)
         sol = 0
 
