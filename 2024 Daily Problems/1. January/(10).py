@@ -14,10 +14,10 @@ class Solution:
 
         stack = [(root, None)]
         while stack: 
-            n, p = stack.pop()
-            if p: 
-                graph[p.val].append(n.val)
-                graph[n.val].append(p.val)
+            n, parent = stack.pop()
+            if parent: 
+                graph[parent.val].append(n.val)
+                graph[n.val].append(parent.val)
             if n.left: stack.append((n.left, n))
             if n.right: stack.append((n.right, n))
                 
