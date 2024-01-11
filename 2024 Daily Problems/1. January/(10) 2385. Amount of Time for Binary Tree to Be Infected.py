@@ -13,9 +13,9 @@ class Solution:
         graph = defaultdict(list)
 
         stack = [(root, None)]
-        while stack: 
+        while stack:
             n, parent = stack.pop()
-            if parent: 
+            if parent:
                 graph[parent.val].append(n.val)
                 graph[n.val].append(parent.val)
             if n.left: stack.append((n.left, n))
